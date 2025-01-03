@@ -1,0 +1,1403 @@
+/*
+Theme Name: Homency
+Description: This is a custom child theme for Salient
+Theme URI:   https://themeforest.net/item/salient-responsive-multipurpose-theme/4363266
+Author: ThemeNectar
+Author URI:  https://themeforest.net/user/themenectar
+Template: salient
+Version: 1.0
+*/
+
+h2 {
+    margin-bottom: 18px;
+}
+h3 {
+    margin-bottom: 10px;
+}
+.grecaptcha-badge {
+    display: none;
+}
+.unclickable > a {
+    pointer-events: none !important;
+}
+.avertissement {
+    padding: 40px 0 0px 0;
+  background-color: #17324b;
+  color: #ece8e3;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+}
+.template-page-reserver .avertissement {
+    text-align: center;
+}
+.custom-wrapper {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.custom-margin {
+    margin: 30px 0 !important;
+}
+.custom-padding {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+}
+.custom-padding-x {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.fancybox__container {
+    z-index: 10000000 !important;
+}
+
+/* Nectar slider */
+.home h1 {
+    font-size: 70px !important;
+    line-height: 76px !important;
+}
+h1:not(.single-logements h1), #bandeau-accueil h2, #bandeau-accueil h3 {
+    color: #e9e5e0 !important;
+}
+h2, h3, h4, h5 {
+    color: #415969;
+}
+.home .subheader {
+    margin-top: 30px;
+}
+#page-header-bg .subheader {
+    color: #e9e5e0 !important;
+}
+
+/* Nectar slider */
+
+/* Repas */
+
+.woocommerce-ordering, .woocommerce .woocommerce-result-count, .woocommerce-page .woocommerce-result-count {
+    display: none;
+}
+.woocommerce-loop-category__title .count {
+    display: none;
+}
+.composite_summary li {
+    list-style: none;
+}
+.woocommerce table.cart .component_table_item .product-thumbnail a img {
+    /*max-height: 40px;
+    width: auto;*/
+    display: none;
+}
+.woocommerce table.cart .component_table_item td {
+    background: #FFF !important;
+}
+.woocommerce table.cart .component_table_item .product-quantity {
+
+    display: none;
+}
+
+.woocommerce table.cart td {
+    padding: 15px 20px;
+}
+
+.woocommerce-shipping-totals.shipping, .woocommerce-cart .order-total {
+    display: none;
+}
+.time-text {
+    margin-top: 30px;
+}
+.alert-livraison {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background: #ba9368;
+    color: #FFF;
+}
+/*
+#e_deliverydate_field {
+    display: none;
+}
+*/
+h3#ship-to-different-address {
+    display: none;
+}
+
+/* Repas */
+
+/* Logements */
+
+.reserver {
+    display: flex;
+    margin-top: 20px;
+}
+
+/*
+.reserver .sidebar {
+    flex: 1;
+}
+.reserver .sidebar ul {
+    margin: 0;
+}
+.reserver .sidebar ul li {
+    padding-left: 0;
+}
+.reserver .logements-ctn {
+    width: 70%;
+}
+*/
+.logements-ctn {
+    width: 100%;
+}
+.logements-ctn .vignette-logement-ctn {
+    box-sizing: border-box;
+}
+.logements-ctn .vignette-logement {
+    box-shadow: 0 0 30px 0 #16314940;
+    transition: 0.2s;
+    overflow: hidden;
+}
+.logements-ctn .vignette-logement .photo {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.logements-ctn .vignette-logement a {
+    color: inherit;
+}
+.logements-ctn .vignette-logement hr {
+    border: 0;
+    width: 40%;
+    height: 1px;
+    background-color: #CCC;
+    margin: 20px auto;
+}
+.logements-ctn .vignette-logement .photo::before {
+    content: "";
+    display: block;
+    padding-top: 66%;
+}
+
+.logements-ctn .vignette-logement .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+.logements-ctn .vignette-logement .description {
+    padding: 16px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.logements-ctn .vignette-logement .description h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #8E998F;
+}
+.logements-ctn .vignette-logement .plus-d-infos {
+    margin-top: 16px;
+}
+.logements-ctn .vignette-logement .prix span {
+    font-size: 22px;
+    color: #17324B;
+}
+.plus-d-infos {
+    margin-top: 20px;
+}
+.plus-d-infos span:not(:first-child) {
+    margin-left: 12px;
+}
+.plus-d-infos span::before {
+    display: inline-block;
+    width: 18px;
+    height: 23px;
+    font-family: "FontAwesome";
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    background-position: center;
+    vertical-align: top;
+    color: #415969;
+}
+.plus-d-infos span.superficie::before {
+    content: "";
+    background-image: url('img/icons/square-regular.svg');
+    width: 14px;
+    margin-top: 2px;
+}
+.plus-d-infos span.nb-sdb::before {
+    content: "\f2cd";
+}
+.plus-d-infos span.nb-voyageurs::before {
+    content: "\f2bd";
+}
+.plus-d-infos span.nb-chambres::before {
+    content: "\f236";
+}
+
+.single-logements .sidebar .reservation {
+    box-shadow: 0 0 30px 0 #00000022;
+    padding: 16px;
+}
+.single-logements .sidebar .reservation #bookingForm button {
+    margin-top: 20px;
+    width: 100%;
+}
+.single-logements .sidebar .reservation #bookingForm button:disabled {
+    background: #EEE;
+    pointer-events: none;
+}
+.single-logements .sidebar .reservation #bookingForm input:not(:last-child) {
+    margin-bottom: 10px;
+}
+.single-logements .sidebar .reservation #bookingForm label {
+    font-size: 13px;
+}
+/* Logements */
+
+/* Single logement */
+
+.single-logements .info-logement #photos {
+    overflow: hidden;
+    box-shadow: 0 0 30px 0 #00000022;
+    margin-top: 20px;
+}
+.single-logements .info-logement #photos img {
+    vertical-align: bottom;
+}
+.single-logements .info-logement section {
+    margin-top: 20px;
+}
+
+.single-logements #map {
+    margin: 20px auto;
+    height: 400px;
+}
+.single-logements .info-logement h3 {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #C9A174;
+}
+.single-logements .info-logement h3::after {
+    display: block;
+    content: "";
+    width: 100%;
+    border-top: 1px solid #415969;
+}
+.single-logements .info-logement ul {
+    margin-left: 0;
+}
+.single-logements .info-logement ul ul {
+    margin-left: 25px;
+}
+.single-logements .info-logement ul ul > li {
+    list-style: square;
+}
+.single-logements .info-logement ul ul > li::marker {
+    color: #c9a174;
+}
+.single-logements .info-logement ul li {
+    list-style: none;
+    margin: 3px 0 6px 0;
+}
+.single-logements .info-logement h4 {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 19px;
+}
+.single-logements .info-logement .equipements-content h4::before, .single-logements .info-logement .services h4::before, .single-logements .info-logement .agencement-content h4::before {
+    display: inline-block;
+    width: 18px;
+    height: 23px;
+    font-family: "FontAwesome";
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    margin-right: 10px;
+    background-position: center;
+    color: #415969;
+}
+.single-logements .info-logement .agencement-content h4.etage::before {
+    background-image: url('img/icons/layer-group-solid.svg');
+    content: "";
+}
+.single-logements .info-logement .agencement-content h4.piece-de-vie::before {
+    background-image: url('img/icons/couch-solid.svg');
+    content: "";
+}
+.single-logements .info-logement .agencement-content h4.chambres::before {
+    content: "\f236";
+}
+.single-logements .info-logement .agencement-content h4.sdb::before {
+    content: "\f2cd";
+}
+.single-logements .info-logement .equipements-content h4.equipements-electromenager::before {
+    background-image: url('img/icons/blender-phone-solid.svg');
+    content: "";
+}
+.single-logements .info-logement .equipements-content h4.equipements-generaux::before {
+    content:"\f015";
+}
+.single-logements .info-logement .equipements-content h4.equipements-multimedia::before {
+    content:"\f26c";
+    font-size: 17px;
+    margin-top: -7px;
+}
+.single-logements .info-logement .services-content h4.services-accueil::before {
+    content:"\f183";
+    margin-top: -9px;
+}
+.single-logements .info-logement .services-content h4.services-en-option::before {
+    content:"\f086";
+    margin-top: -8px;
+    font-size: 18px;
+}
+.single-logements .info-logement .services-content h4.services-menage-et-linge::before {
+    background-image: url('img/icons/spray-can-sparkles-solid.svg');
+    content: "";
+}
+.single-logements .prix > div span {
+    font-weight: bold;
+    width: auto;
+    text-align: right;
+}
+.single-logements .prix > div {
+    padding: 1px 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.single-logements .prix .infos {
+    font-size: 12px;
+    font-style: italic;
+    line-height: 1.5em;
+    display: block;
+    margin-top: 15px;
+}
+.single-logements #prixsejour {
+    display: none;
+}
+.single-logements #availability {
+    font-size: 12px;
+    color: #FFF;
+}
+.single-logements #availability span {
+    padding: 3px 7px;
+}
+.single-logements #availability span.available {
+    background-color: green;
+}
+.single-logements #availability span.unavailable {
+    background-color: red;
+}
+.single-logements .info-logement #photos .galerie::before {
+    content: "";
+    display: block;
+    padding-top: 66.66%; /* 3:2 ratio (2/3 * 100) */
+}
+.single-logements .info-logement #photos .galerie .nav {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: flex;
+    z-index: 15;
+    background: #FFFFFF55;
+    padding: 3px;
+}
+.single-logements .info-logement #photos .galerie .back::before, .single-logements .info-logement #photos .galerie .next::before {
+    display: block;
+    font-family: "FontAwesome";
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 30px;
+    color: #111;
+}
+.single-logements .info-logement #photos .galerie .back::before {
+    content: "\f053";
+    margin-right: 10px;
+}
+.single-logements .info-logement #photos .galerie .next::before {
+    content: "\f054";
+}
+.single-logements .info-logement #photos .galerie {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+}
+.single-logements .info-logement #photos .galerie figure {
+    width: 100%;
+    height: 100%;
+    flex: none;
+    position: absolute;
+    user-select: none; /* Désactiver la sélection de texte */
+}
+.single-logements .info-logement #photos .galerie figure.on {
+    display: block;
+}
+.single-logements .info-logement #photos .galerie figure.off {
+    display: none;
+}
+.single-logements .info-logement #photos .galerie figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Single logement */
+
+/* Formulaire réservation */
+
+.form-recherche-logement ul.options li {
+    list-style: none;
+}
+.form-recherche-logement #plus-de-filtres-btn {
+    margin: 0 auto;
+    display: block;
+    border: 0;
+    padding: 8px 16px;
+    background: #17324B;
+    color: #FFF;
+    cursor: pointer;
+}
+.form-recherche-logement #plus-de-filtres-ctn {
+    margin-top: 40px;
+}
+
+.form-recherche-logement #plus-de-filtres-ctn li {
+    display: flex;
+    align-items: center;
+}
+.form-recherche-logement #plus-de-filtres-ctn label {
+    color: #E9E5E0;
+}
+.form-recherche-logement input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+    accent-color: #C0A078;
+}
+.form-recherche-logement input[type=checkbox] + label {
+    padding-left: 4px;
+}
+.form-recherche-logement select {
+    height: 100%;
+}
+.form-recherche-logement col.button {
+
+}
+.form-recherche-logement select, .form-recherche-logement input {
+    background: #E9E5E0;
+}
+.form-recherche-logement .primary input[type=submit] {
+    height: 50px;
+    padding: 0 30px;
+    width: 100%;
+}
+.form-recherche-logement #plus-de-filtres-ctn {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.form-recherche-logement #plus-de-filtres-ctn.off {
+    display: none;
+}
+.form-recherche-logement #plus-de-filtres-ctn.on {
+    display: flex;
+}
+.form-recherche-logement #plus-de-filtres-ctn .rechercher-secondary {
+    text-align: center;
+    width: 100%;
+}
+.form-recherche-logement #plus-de-filtres-ctn .rechercher-secondary input[type=submit] {
+    margin-top: 25px;
+    padding: 15px 30px;
+}
+.form-recherche-logement #plus-de-filtres-ctn ul.options {
+    margin: 0 0 15px 0;
+}
+/* Formulaire réservation */
+
+/* Footer */
+
+#footer-outer h2 {
+    font-size: 22px;
+    color: #e9e5e0 !important;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+#footer-outer .widget_block {
+    margin-bottom: 0;
+}
+/* Footer */
+
+
+/* Evénements */
+
+.evenements .wpb_wrapper > .vc_custom_heading, .evenements .wpb_wrapper > .wpb_content_element {
+    padding: 0 60px;
+}
+.evenements .wpb_wrapper > .wpb_content_element {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.evenements .vc_row .column_container .wpb_wrapper:has(div) {
+    background: #FFF !important;
+    height: 100%;
+}
+.evenements .wpb_wrapper > h5 {
+    margin-bottom: 0;
+}
+.evenements .wpb_wrapper > .nectar-button, .evenements .wpb_wrapper > .img-with-aniamtion-wrap {
+    margin-bottom: 50px;
+}
+.evenements .wpb_wrapper > .img-with-aniamtion-wrap {
+    border-radius: 0;
+    overflow: hidden;
+}
+
+/* Evénements */
+
+.page-template .form-recherche-logement {
+    background-color: #17324b;
+    padding: 25px 25px 50px 25px;
+}
+#bandeau-accueil h1, #bandeau-accueil h2 {
+    text-shadow: 0 0 20px #00000088;
+}
+#bandeau-accueil .col.span_12 {
+    z-index:100;
+}
+#bandeau-accueil .form-recherche-logement #plus-de-filtres-ctn {
+    z-index: 1000;
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    background: #e9e5e0;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 0 0 30px 0 #00000022;
+}
+#bandeau-accueil .form-recherche-logement .row.primary {
+    box-shadow: 0 0 40px #00000055;
+    border-radius: 10px;
+}
+.form-recherche-logement input:not([type="checkbox"]), .form-recherche-logement select {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+}
+.form-recherche-logement input, .form-recherche-logement label {
+    cursor: pointer;
+}
+.form-recherche-logement input:focus, .form-recherche-logement select:focus {
+  outline: none;
+}
+.form-recherche-logement .row.primary {
+    padding: 10px;
+    background: #e9e5e0;
+    border-radius: 10px 10px 0 10px;
+}
+#bandeau-accueil .form-recherche-logement #plus-de-filtres-btn {
+    display: none;
+}
+.form-recherche-logement #plus-de-filtres-btn {
+    background: #e9e5e0;
+    color: #333;
+    border-radius: 0 0 6px 6px !important;
+    position: absolute;
+    right: 0;
+}
+.form-recherche-logement #plus-de-filtres-ctn label {
+    color: #333;
+}
+.form-recherche-logement {
+    position: relative;
+}
+.form-recherche-logement .col {
+    margin-bottom: 0;
+}
+
+.form-recherche-logement input[type="date"]:after {
+    color: #555;
+    content: '' !important;
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    padding: 10px;
+    pointer-events: none;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+}
+
+.form-recherche-logement input[type="date"].show-placeholder:after {
+    content: attr(placeholder) !important;
+    line-height: 26px;
+}
+
+.form-recherche-logement input[type="date"].has-value:after,
+.form-recherche-logement input[type="date"].focus:after {
+    content: '' !important;
+}
+
+
+
+/* Full CAlendar */
+.single-logements #calendar .fc-view-harness.fc-view-harness-active {
+    height: auto !important;
+}
+.single-logements #calendar h2 {
+    font-size: 18px;
+}
+.single-logements #calendar .fc-button {
+    padding: 0.2em 0.35em !important;
+}
+.single-logements #calendar .fc-button-group > .fc-button:not(:first-child) {
+    margin-left: 7px !important;
+}
+.single-logements #calendar .fc-view-harness-active > .fc-view {
+    height: 500px !important;
+    position: relative;
+}
+.single-logements #calendar .fc .fc-scroller-harness-liquid {
+    height: 450px;
+}
+.single-logements #calendar td {
+    padding: 0 !important;
+}
+.single-logements #calendar th {
+    font-weight: 500 !important;
+    padding: 0 !important;
+}
+
+/* Full Calendar */
+
+#bandeau-services-accueil .img-with-aniamtion-wrap.custom-width-25pct .inner {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+#bandeau-services-accueil .img-with-aniamtion-wrap {
+    height: 80px !important;
+}
+
+@media only screen and (max-width: 639px) {
+    .logements-ctn .vignette-logement-ctn {
+        margin-bottom: 30px;
+    }
+    .form-recherche-logement .row.primary {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .form-recherche-logement .row .col {
+        width: 25%;
+    }
+    .form-recherche-logement .row .col.nuits {
+        display: none;
+    }
+    .form-recherche-logement .row .col.button {
+        width: 100%;
+    }
+    .single-logements #bookingForm .prix {
+        margin-top: 10px;
+    }
+    #footer-outer .size-full {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+@media only screen and (max-width: 690px) {
+    .form-recherche-logement .row input, .form-recherche-logement select {
+        padding: 5px;
+    }
+}
+@media only screen and (min-width: 640px) {
+    .custom-padding-x {
+        padding-left: 60px !important;
+        padding-right: 60px !important;
+    }
+    /* Logements */
+    .logements-ctn {
+        padding: 20px;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .logements-ctn .vignette-logement-ctn {
+        width: calc(100%/2);
+        padding: 13px;
+    }
+    .logements-ctn .vignette-logement-ctn .description {
+        min-height: 230px;
+    }
+
+    /* Logements */
+
+    /* single-logements */
+
+    .single-logements main {
+        display: flex;
+    }
+    .single-logements h1 {
+        color: #415969;
+        margin-bottom: 0;
+    }
+    .single-logements .info-logement {
+        width: 70%;
+        box-sizing: border-box;
+        padding-right: 30px;
+    }
+    .single-logements .sidebar {
+        flex: 1;
+    }
+    .single-logements .info-logement .equipements-content ul.grid-style {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .single-logements .info-logement .equipements-content > ul > li {
+        width: calc(100% / 3);
+        padding: 0 30px 5px 0;
+        /* flex: 1 1 auto; */
+        box-sizing: border-box;
+    }
+    .form-recherche-logement .primary input[type=submit] {
+        height: 100%;
+    }
+    .form-recherche-logement .col {
+        margin-right: 2px;
+    }
+    .form-recherche-logement .row, .form-recherche-logement ul.options, .single-logements .sidebar .reservation #bookingForm .row, .single-logements .info-logement .row {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .form-recherche-logement input[type="date"].show-placeholder:after {
+        line-height: 35px;
+    }
+    #bandeau-accueil .form-recherche-logement {
+        padding: 20px 20px;
+    }
+    .single-logements .sidebar .reservation #bookingForm .off {
+        display: none !important;
+    }
+    .single-logements .calendar-ctn {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .single-logements #calendar {
+        max-width: 100%;
+        margin: 0 auto;
+        overflow: hidden; /* Hide overflow to prevent scrollbars */
+    }
+    .single-logements .fc-daygrid, .single-logements .fc-scrollgrid-sync-inner {
+        height: auto !important; /* Ensure the height adjusts to fit the content */
+    }
+    .single-logements .fc-scroller-harness, .single-logements .fc-scroller {
+        overflow: hidden !important; /* Prevent any scrolling */
+    }
+    .single-logements #calendar td  {
+        font-size: 13px !important;
+        padding: 2px !important;
+    }
+    .single-logements #calendar .fc-event-title {
+        font-size: 10px !important;
+    }
+    /* single-logements */
+
+    .evenements .wpb_text_column {
+        height: 180px;
+        overflow: hidden;
+    }
+    .evenements h3.vc_custom_heading {
+        height: 108px;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    body #footer-outer .row {
+        padding: 45px 0;
+        display: flex;
+        align-items: stretch;
+    }
+    body.material #footer-outer #footer-widgets .col ul li {
+        padding: 1px 0 !important;
+    }
+    body.material #footer-outer .widget_media_image {
+        height: 100%;
+    }
+    body.material #footer-outer .wp-block-image {
+        height: 100%;
+        display: flex !important;
+        align-items: center;
+    }
+    body.material #footer-outer img {
+        max-height: 130px;
+    }
+    #bandeau-services-accueil .img-with-aniamtion-wrap {
+        height: 50px !important;
+    }
+    .logements-ctn .vignette-logement-ctn {
+        width: calc(100%/3);
+    }
+    .page-template .form-recherche-logement {
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+}
+@media only screen and (min-width: 1120px) {
+    /* Formulaire de recherche */
+
+    .single-logements .info-logement .row {
+        align-items: center;
+    }
+    .single-logements .sidebar .reservation #bookingForm .row {
+        margin-bottom: 20px;
+    }
+    .form-recherche-logement ul.options {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .form-recherche-logement ul.options li:not(:last-child) {
+        margin-right: 20px;
+    }
+    .plus-de-filtres-ctn .row {
+        width: 100%;
+    }
+    .form-recherche-logement .col, .plus-de-filtres-ctn .col {
+        width: 20%;
+    }
+    /* Permet de faire fonctionner le formulaire sticky */
+    body.single-logements {
+        overflow: visible !important;
+    }
+    /* Permet de faire fonctionner le formulaire le sticky */
+    .single-logements .sidebar .reservation #bookingForm .row .col:not(:last-child) {
+        margin-right: 15px;
+    }
+    .single-logements .sidebar .reservation {
+        position: sticky;
+        position: -webkit-sticky; /* Safari */
+        top: 259px;
+    }
+    /* Formulaire de recherche */
+    .custom-margin {
+        margin: 40px 0 !important;
+    }
+    .custom-padding {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+    .custom-padding-x {
+        padding-left: 160px !important;
+        padding-right: 160px !important;
+    }
+
+    /* Page réserver */
+
+    .reserver .no-results {
+        text-align: center;
+        width: 100%;
+    }
+    /* Page réserver */
+}
+@media only screen and (min-width: 1300px) {
+    body.woocommerce:not(.single-product) ul.products[data-n-desktop-columns="4"] li.product {
+        width: 15.14%!important;
+        margin: 0 1.5% 1.5% 0!important;
+    }
+    .composited_product_details_wrapper {
+        display: flex;
+    }
+}
+
+
+
+
+
+.reservation-form ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchandfilter ul li {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* Secondary Nav */
+
+nav li a {
+    font-size: 14px;
+}
+nav li.icone a {
+    display: flex;
+}
+nav li.icone a:before {
+    font-family: "FontAwesome";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    color: #905245;
+}
+nav li.tel a:before {
+    content: "\f095";
+    font-size: 16px;
+    padding-top: 2px;
+    margin-right: 2px;
+}
+nav li.mail a:before {
+    content: "\f0e0";
+    font-size: 15px;
+    margin-right: 5px;
+    padding-top: 1px;
+}
+@media only screen and (min-width: 1000px) {
+    #header-secondary-outer nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    #header-secondary-outer nav ul li#menu-item-wpml-ls-34-en {
+        margin-right: 0;
+        border-right: 1px solid #FFF;
+    }
+    #header-secondary-outer nav ul li#menu-item-wpml-ls-34-fr {
+        margin-right: auto;
+    }
+    .sf-menu>li ul {
+        padding: 13px !important;
+    }
+}
+
+
+/* Search and filter */
+@media only screen and (min-width: 900px) {
+    .searchandfilter ul.sf_date_field > li:first-child {
+        margin-right: 15px;
+    }
+}
+
+/* AILLEURS */
+
+
+
+#footer-widgets .bouton {
+
+    margin-top: 10%;
+     --offset: 10px;
+     --border-size: 2px;
+     display: block;
+     position: relative;
+     padding: 0.8em 1em;
+     appearance: none;
+     border: 0;
+     background: transparent;
+     color: #fff;
+     text-transform: uppercase;
+     letter-spacing: 0.25em;
+     outline: none;
+     cursor: pointer;
+     font-weight: normal;
+     font-size: 16px;
+     border-radius: 0;
+     box-shadow: inset 0 0 0 var(--border-size) #C9A174 !important;
+     transition: background 0.8s ease;
+     font-family: "Century Gothic", sans-serif
+}
+
+
+ .bouton {
+     --offset: 10px;
+     --border-size: 2px;
+     display: block;
+     position: relative;
+     padding: 0.5em 1em;
+     appearance: none;
+     border: 0;
+     background: transparent;
+     color: #17324B;
+     text-transform: uppercase;
+     letter-spacing: 0.25em;
+     outline: none;
+     cursor: pointer;
+     font-weight: normal;
+     font-size: 15px;
+     border-radius: 0;
+     box-shadow: inset 0 0 0 var(--border-size) #C9A174 !important;
+     transition: background 0.8s ease;
+     font-family: "Century Gothic", sans-serif
+}
+ .bouton:hover {
+     background: rgba(100, 0, 0, .03);
+}
+ .bouton__horizontal, .bouton__vertical {
+     position: absolute;
+     top: var(--horizontal-offset, 0);
+     right: var(--vertical-offset, 0);
+     bottom: var(--horizontal-offset, 0);
+     left: var(--vertical-offset, 0);
+     transition: transform 0.8s ease;
+     will-change: transform;
+
+}
+ .bouton__horizontal::before, .bouton__vertical::before {
+     content: '';
+     position: absolute;
+     border: inherit;
+}
+ .bouton__horizontal {
+     --vertical-offset: calc(var(--offset) * -1);
+     border-top: var(--border-size) solid #C9A174;
+     border-bottom: var(--border-size) solid #C9A174;
+}
+ .bouton__horizontal::before {
+     top: calc(var(--vertical-offset) - var(--border-size));
+     bottom: calc(var(--vertical-offset) - var(--border-size));
+     left: calc(var(--vertical-offset) * -1);
+     right: calc(var(--vertical-offset) * -1);
+}
+ .bouton:hover .bouton__horizontal {
+     transform: scaleX(0);
+}
+ .bouton__vertical {
+     --horizontal-offset: calc(var(--offset) * -1);
+     border-left: var(--border-size) solid #C9A174;
+     border-right: var(--border-size) solid #C9A174;
+}
+ .bouton__vertical::before {
+     top: calc(var(--horizontal-offset) * -1);
+     bottom: calc(var(--horizontal-offset) * -1);
+     left: calc(var(--horizontal-offset) - var(--border-size));
+     right: calc(var(--horizontal-offset) - var(--border-size));
+}
+ .bouton:hover .bouton__vertical {
+     transform: scaleY(0);
+}
+
+.contain .using-image {
+    background-size: contain;
+}
+
+
+.cover .using-image {
+    background-size : cover;
+}
+
+.cover .column-image-bg {
+    background-size : cover;
+}
+
+.cl-start .vc_column-inner {
+    justify-content: start !important;
+}
+
+.font-script {
+    font-family: Cellien Script !important;
+    font-size: 160px !important;
+    line-height: 1em;
+    padding-right: 10px;
+
+}
+
+#bandeau-services-accueil img {
+    width: 70px;
+}
+
+#bandeau-services-accueil .iwithtext .iwt-text {
+      padding-left: 85px;
+}
+
+#bandeau-services-accueil strong {
+      font-size:18px;
+      color:#17324b;
+}
+
+.page-template-reserver .container-wrap {
+
+    background-image: url('https://www.homency.fr/wp-content/uploads/2024/06/Homency-element.png');
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#footer-outer #footer-widgets {
+    border-bottom: none;
+    background-image: url('https://www.homency.fr/wp-content/uploads/2024/06/bg-footer-logo.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    padding-bottom: 5%;
+    background-size: 60%;
+}
+/*
+
+#offre-services .offre p {
+    display:none;
+    opacity: 0;
+}
+
+#offre-services .offre:hover p {
+    display:block;
+    opacity: 1;
+    transition: ease;
+}
+
+
+/* Animation */
+
+/*
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+#offre-services .offre:hover p{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+#offre-services .offre:hover p {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#offre-services .offre:hover h3 {
+  transition: 1s;
+
+}
+*/
+
+.position_desktop_absolute {
+    width: auto;
+}
+
+.img-absolute {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.vignette-logement-ctn:hover .vignette-logement {
+
+    box-shadow: 0 0 30px 0 #0000000a;
+    transition: 0.2s;
+
+}
+
+#top .container {
+
+        padding: 0 30px;
+}
+
+.vertical {
+
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  text-orientation: mixed;
+  font-weight: bold;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+
+
+}
+
+.row-vertical .wrap-vertical .row_col_wrap_12_inner .child_column:first-child {
+
+    display: flex;
+    align-items: end;
+}
+
+.row-vertical .wrap-vertical2 .row_col_wrap_12_inner .child_column:first-child {
+
+    display: flex;
+    align-items: center;
+}
+
+.row-vertical .wrap-vertical .row_col_wrap_12_inner .child_column:last-child {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.blog-recent[data-style*="classic_enhanced"] .inner-wrap {
+
+      box-shadow: 0 1px 3px #c9a1744a;
+}
+
+.btn-google {
+    display: none;
+}
+
+
+.form-recherche-logement #plus-de-filtres-ctn label, .form-recherche-logement #plus-de-filtres-ctn h5 {
+    color:#fff;
+}
+
+.puces-homency .iwithtext .iwt-icon {
+    top: 8px !important;
+}
+
+.puces-homency .iwithtext .iwt-icon img:not([srcset]) {
+  width: 100% !important;
+  margin-bottom: 0;
+
+}
+
+.puces-homency  .iwithtext .iwt-text {
+    padding-left: 25px;
+
+}
+
+.puces-homency .wpb_wrapper > div {
+      margin-bottom: 5px;
+}
+
+.hidden-lg {
+    display: none;
+}
+
+
+.subheading-text-ho  {
+font-size: 34px;
+}
+
+
+
+/* Petit laptop */
+@media only screen and (min-width : 1201px) and (max-width : 1260px) {
+
+#top nav > ul > li > a {
+     font-size: 14px !important;
+
+}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+.vertical {
+
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  writing-mode: inherit;
+  text-orientation: inherit;
+  font-weight: bold;
+  transform: rotate(0deg);
+
+}
+
+.hidden-lg {
+    display: block;
+}
+
+
+.img-absolute {
+    display: none !important;
+}
+
+
+
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+.font-script {
+    font-size: 115px !important;
+    line-height: 1em;
+}
+
+.hidden-lg {
+    display: block;
+}
+
+.main-content .testimonial_slider[data-style="multiple_visible"] blockquote p {
+
+    padding: 0 !important;
+}
+
+.vertical {
+
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  writing-mode: inherit;
+  text-orientation: inherit;
+  font-weight: bold;
+  transform: rotate(0deg);
+
+}
+
+.xs-img {
+    max-width: 30% !important;
+}
+
+.bouton {
+
+  padding: 1em 1em;
+  letter-spacing: 0.1em;
+  font-size: 15px;
+
+}
+
+.img-absolute {
+    display: none !important;
+}
+
+.home h1 {
+  font-size: 37px !important;
+  line-height: 40px !important;
+}
+
+.subheading-text-ho h1 {
+font-size: 24px;
+}
+
+
+}

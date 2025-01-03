@@ -1,0 +1,32 @@
+.wp-core-ui select[multiple] {
+	height: 400px !important;
+}
+#logements_gallery {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#logements_gallery .image {
+    margin: 5px;
+    cursor: move;
+    position: relative;
+}
+
+#logements_gallery .image img {
+    max-width: 100px;
+    max-height: 100px;
+    display: block;
+}
+
+#logements_gallery .remove_image {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 2px 5px;
+    text-decoration: none;
+}
